@@ -75,7 +75,7 @@ In Vercel, choose **Add New → Project**, import your GitHub repository, and se
 | Output Directory | `dist` |
 | Environment Variables | None |
 
-The production output is static. Do not configure a serverless function, API route, database, or LMS secret. The app does not use nested URL routes, so it does not need a `vercel.json` rewrite. Vercel serves only the configured output directory. Confirm these settings before clicking **Deploy** yourself.
+The production output is static. The checked-in `vercel.json` sets the framework to Other, runs the build, and serves `dist/`. Do not configure a serverless function, API route, database, LMS secret, or route rewrite. Confirm the root directory and Node.js version before clicking **Deploy** yourself.
 
 Vercel's [build configuration](https://vercel.com/docs/builds/configure-a-build) explains the `Other` preset, build command, and output directory; its [Git integration guide](https://vercel.com/docs/git) covers importing a repository.
 

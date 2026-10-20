@@ -1,7 +1,7 @@
 import { topics, newSession, getProgress, getDemoReward } from './mock-data.js';
 import { validateFile, validateAnswer } from './logic.js';
 
-const root = document.querySelector('#app');
+const root = typeof document === 'undefined' ? null : document.querySelector('#app');
 const STORAGE_KEY = 'junior-ai-yordamchi-prototype-v1';
 const samplePreview = './assets/sample-homework.svg';
 const countingPreview = './assets/sample-counting.svg';
@@ -31,7 +31,7 @@ function restore() {
   return { view: 'course', history: [], session: null, modal: null, toast: '', chatDraft: '', savedSession: null };
 }
 
-let state = restore();
+let state;
 let toastTimer;
 function persist() {
   const saved = clone({ view: state.view, history: state.history, session: state.session, savedSession: state.savedSession });
@@ -371,6 +371,9 @@ function handleAction(action, target) {
   }
 }
 
+if (root) {
+state = restore();
+
 root.addEventListener('click', event => {
   const target = event.target.closest('[data-action]');
   if (!target || event.target.closest('[data-stop]') && target.dataset.action === 'close-modal' && target.classList.contains('modal-overlay')) return;
@@ -393,3 +396,4 @@ root.addEventListener('dragleave', event => { if (event.target.closest('#drop-zo
 root.addEventListener('drop', event => { const zone = event.target.closest('#drop-zone'); if (zone) { event.preventDefault(); zone.classList.remove('dragging'); useFile(event.dataTransfer.files?.[0]); } });
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && state.modal) { state.modal = null; render(); } });
 render();
+}
