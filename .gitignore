@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.vercel/
+coverage/
+.cache/
+
+.env
+.env.*
+!.env.example
+
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

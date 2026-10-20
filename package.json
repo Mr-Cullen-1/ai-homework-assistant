@@ -1,0 +1,14 @@
+{
+  "name": "junior-ai-homework-prototype",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node server.mjs --dist",
+    "test": "node --test --test-isolation=none"
+  }
+}

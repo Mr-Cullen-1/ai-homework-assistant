@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" role="img" aria-label="1-sinf matematika demo vazifasi">
+  <rect width="650" height="450" fill="#f8f6ef"/><path d="M0 48H650M0 96H650M0 144H650M0 192H650M0 240H650M0 288H650M0 336H650M0 384H650" stroke="#e7e4dc"/><path d="M48 0V450M96 0V450M144 0V450M192 0V450M240 0V450M288 0V450M336 0V450M384 0V450M432 0V450M480 0V450M528 0V450M576 0V450M624 0V450" stroke="#e7e4dc"/>
+  <rect x="26" y="22" width="598" height="406" rx="18" fill="#fffefb" fill-opacity=".87" stroke="#d9d5ca"/>
+  <text x="325" y="76" text-anchor="middle" font-size="28" font-family="Arial, sans-serif" font-weight="700" fill="#1a2441">Matematika</text>
+  <text x="325" y="105" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" fill="#3c4a67">1-sinf · Demo uyga vazifa</text>
+  <text x="70" y="150" font-size="20" font-family="Arial, sans-serif" fill="#1a2441">Hisoblang:</text>
+  <text x="85" y="204" font-size="28" font-family="Arial, sans-serif" fill="#1a2441">1)  2 + 3 = □</text>
+  <text x="345" y="204" font-size="28" font-family="Arial, sans-serif" fill="#1a2441">2)  4 + 2 = □</text>
+  <text x="85" y="272" font-size="28" font-family="Arial, sans-serif" fill="#1a2441">3)  5 − 2 = □</text>
+  <text x="345" y="272" font-size="28" font-family="Arial, sans-serif" fill="#1a2441">4)  3 + 4 = □</text>
+  <text x="70" y="357" font-size="18" font-family="Arial, sans-serif" fill="#5d6780">Avval o‘zingiz urinib ko‘ring ✨</text>
+</svg>
